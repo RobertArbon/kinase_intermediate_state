@@ -1,0 +1,41 @@
+[GideonIX:27196] shmem: mmap: an error occurred while determining whether or not /tmp/ompi.GideonIX.1000/jf.0/3936813056/shared_mem_cuda_pool.GideonIX could be created.
+[GideonIX:27196] create_and_attach: unable to create shared memory BTL coordinating structure :: size 134217728 
+                :-) GROMACS - gmx mdrun, 2024.2-conda_forge (-:
+
+Executable:   /home/lex/miniforge3/envs/bss/bin.AVX2_256/gmx_mpi
+Data prefix:  /home/lex/miniforge3/envs/bss
+Working dir:  /home/lex/Research/kinase_intermediate_state/abfe/6rna/heating
+Command line:
+  gmx_mpi mdrun -deffnm gromacs -c /home/lex/Research/kinase_intermediate_state/abfe/6rna/heating/gromacs_out.gro
+
+The current CPU can measure timings more accurately than the code in
+gmx mdrun was configured to use. This might affect your simulation
+speed as accurate timings are needed for load-balancing.
+Please consider rebuilding gmx mdrun with the GMX_USE_RDTSCP=ON CMake option.
+Reading file gromacs.tpr, VERSION 2024.2-conda_forge (single precision)
+Changing nstlist from 20 to 50, rlist from 0.833 to 0.92
+
+
+Update groups can not be used for this system because atoms that are (in)directly constrained together are interdispersed with other atoms
+
+1 GPU selected for this run.
+Mapping of GPU IDs to the 2 GPU tasks in the 1 rank on this node:
+  PP:0,PME:0
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the GPU
+PME tasks will do all aspects on the GPU
+Using 1 MPI process
+Using 12 OpenMP threads 
+
+starting mdrun 'final'
+500000 steps,   1000.0 ps.
+
+Writing final coordinates.
+
+               Core t (s)   Wall t (s)        (%)
+       Time:     2895.055      241.257     1200.0
+                 (ns/day)    (hour/ns)
+Performance:      358.124        0.067
+
+GROMACS reminds you: "Stop Drinking My Beer !" (The Amps)
+
