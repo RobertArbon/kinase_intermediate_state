@@ -14,4 +14,4 @@
 **/.gromacs.*
 *.prm7
 *.rst7
-
+*.pkl
